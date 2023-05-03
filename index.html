@@ -27,30 +27,34 @@
         <div class="form-row col"> <span>REGISTRAR PACIENTE</span></div>
         <div class="form-row">
           <div class="">
-            <input type="text" class="form-control" placeholder="Nombres" />
+            <input type="text" id="nombres" class="form-control" placeholder="Nombres" />
           </div>
           <div class="">
-            <input type="text" class="form-control" placeholder="Apellidos" />
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="">
-            <input type="number" class="form-control" placeholder="Cedula" />
-          </div>
-          <div class="">
-            <input type="text" class="form-control" placeholder="Teléfono" />
+            <input type="text" id="apellidos" class="form-control" placeholder="Apellidos" />
           </div>
         </div>
         <div class="form-row">
           <div class="">
-            <input type="number" class="form-control" placeholder="Edad" />
+            <input type="number" id="cedula" class="form-control" placeholder="Cedula" />
           </div>
           <div class="">
-            <input type="text" class="form-control" placeholder="Condición Especial" />
+            <input type="text" id="telefono" class="form-control" placeholder="Teléfono" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="">
+            <input type="number" id="edad" class="form-control" placeholder="Edad" />
+          </div>
+          <div class="">
+            <label for="">Condición Especial</label>
+            <select id="condicionEspecial">
+              <option value="no">NO</option>
+              <option value="si">SI</option>
+            </select>
           </div>
         </div>
         <div class="form-row "> 
-            <button class="btn btn-primary btn-registrar">
+            <button type="button" id="btn-registrar" class="btn btn-primary btn-registrar">
                 REGISTRAR
             </button>   
         </div>
@@ -66,7 +70,7 @@
             </div>           
           </div>          
           <div class="form-row "> 
-              <button class="btn btn-primary btn-solicitar">
+              <button id="btn-solicitar" class="btn btn-primary btn-solicitar">
                   SOLICITAR
               </button>   
           </div>
